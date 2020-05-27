@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="218" id="KGk-i7-Jjw" customClass="CustommerTableViewCell" customModule="table3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="473" height="218"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="473" height="218"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmx-Y9-8BC">
+                        <rect key="frame" x="0.0" y="0.0" width="473" height="218"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjI-Iv-OUd">
+                                <rect key="frame" x="108" y="79" width="345" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABB-G1-si3">
+                                <rect key="frame" x="108" y="38" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="qHf-MC-bk8">
+                                <rect key="frame" x="0.0" y="30" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qHf-MC-bk8" secondAttribute="height" id="7OV-rp-Fkc"/>
+                                    <constraint firstAttribute="height" constant="100" id="dgk-SY-DEe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ABB-G1-si3" firstAttribute="top" secondItem="qHf-MC-bk8" secondAttribute="top" constant="8" id="1di-tz-L0Z"/>
+                            <constraint firstItem="jjI-Iv-OUd" firstAttribute="top" secondItem="ABB-G1-si3" secondAttribute="bottom" constant="20" id="200-8a-NIr"/>
+                            <constraint firstItem="ABB-G1-si3" firstAttribute="leading" secondItem="qHf-MC-bk8" secondAttribute="trailing" constant="8" id="C8T-dp-UpS"/>
+                            <constraint firstAttribute="trailing" secondItem="jjI-Iv-OUd" secondAttribute="trailing" constant="20" id="GG7-P0-6Zv"/>
+                            <constraint firstAttribute="bottom" secondItem="qHf-MC-bk8" secondAttribute="bottom" priority="750" constant="30" id="GkF-mV-BFl"/>
+                            <constraint firstItem="jjI-Iv-OUd" firstAttribute="leading" secondItem="qHf-MC-bk8" secondAttribute="trailing" constant="8" id="aPD-rU-qWR"/>
+                            <constraint firstItem="qHf-MC-bk8" firstAttribute="top" secondItem="fmx-Y9-8BC" secondAttribute="top" constant="30" id="c5M-LJ-Su8"/>
+                            <constraint firstAttribute="trailing" secondItem="ABB-G1-si3" secondAttribute="trailing" constant="30" id="dnl-fo-EfX"/>
+                            <constraint firstItem="qHf-MC-bk8" firstAttribute="leading" secondItem="fmx-Y9-8BC" secondAttribute="leading" id="n8a-QD-13T"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="fmx-Y9-8BC" secondAttribute="bottom" id="DFQ-Kj-dl6"/>
+                    <constraint firstItem="fmx-Y9-8BC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="RdY-0j-0Tz"/>
+                    <constraint firstAttribute="trailing" secondItem="fmx-Y9-8BC" secondAttribute="trailing" id="Wci-PY-21w"/>
+                    <constraint firstItem="fmx-Y9-8BC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kLB-Ld-8yy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageName" destination="qHf-MC-bk8" id="7eV-vM-jba"/>
+                <outlet property="nameLable" destination="ABB-G1-si3" id="VzO-xk-ymL"/>
+                <outlet property="phoneLable" destination="jjI-Iv-OUd" id="gJf-0B-NXv"/>
+            </connections>
+            <point key="canvasLocation" x="-349" y="-39"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="2" width="186" height="178"/>
+    </resources>
+</document>

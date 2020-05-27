@@ -13,6 +13,15 @@
 		3137525C2477BD810071643E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3137525A2477BD810071643E /* Main.storyboard */; };
 		3137525E2477BD830071643E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3137525D2477BD830071643E /* Assets.xcassets */; };
 		313752612477BD830071643E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3137525F2477BD830071643E /* LaunchScreen.storyboard */; };
+		3137526A2477BDD00071643E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313752692477BDD00071643E /* Person.swift */; };
+		3137526D2477BF410071643E /* CustommerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3137526B2477BF410071643E /* CustommerTableViewCell.swift */; };
+		3137526E2477BF410071643E /* CustommerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3137526C2477BF410071643E /* CustommerTableViewCell.xib */; };
+		31C80814247DF38A002D0CB8 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C80812247DF38A002D0CB8 /* AddContactViewController.swift */; };
+		31C80815247DF38A002D0CB8 /* AddContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C80813247DF38A002D0CB8 /* AddContactViewController.xib */; };
+		31C80817247E03A1002D0CB8 /* Person1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C80816247E03A1002D0CB8 /* Person1.swift */; };
+		31C80819247E03CA002D0CB8 /* ManagerImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C80818247E03CA002D0CB8 /* ManagerImagePicker.swift */; };
+		31C80824247E166A002D0CB8 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C80822247E166A002D0CB8 /* EditViewController.swift */; };
+		31C80825247E166A002D0CB8 /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C80823247E166A002D0CB8 /* EditViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		3137525D2477BD830071643E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		313752602477BD830071643E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		313752622477BD830071643E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		313752692477BDD00071643E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3137526B2477BF410071643E /* CustommerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustommerTableViewCell.swift; sourceTree = "<group>"; };
+		3137526C2477BF410071643E /* CustommerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustommerTableViewCell.xib; sourceTree = "<group>"; };
+		31C80812247DF38A002D0CB8 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		31C80813247DF38A002D0CB8 /* AddContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddContactViewController.xib; sourceTree = "<group>"; };
+		31C80816247E03A1002D0CB8 /* Person1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person1.swift; sourceTree = "<group>"; };
+		31C80818247E03CA002D0CB8 /* ManagerImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerImagePicker.swift; sourceTree = "<group>"; };
+		31C80822247E166A002D0CB8 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		31C80823247E166A002D0CB8 /* EditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 		313752532477BD810071643E /* table3 */ = {
 			isa = PBXGroup;
 			children = (
+				313752682477BDBD0071643E /* Model */,
 				313752542477BD810071643E /* AppDelegate.swift */,
 				313752562477BD810071643E /* SceneDelegate.swift */,
 				313752582477BD810071643E /* ViewController.swift */,
@@ -63,8 +82,24 @@
 				3137525D2477BD830071643E /* Assets.xcassets */,
 				3137525F2477BD830071643E /* LaunchScreen.storyboard */,
 				313752622477BD830071643E /* Info.plist */,
+				3137526B2477BF410071643E /* CustommerTableViewCell.swift */,
+				3137526C2477BF410071643E /* CustommerTableViewCell.xib */,
+				31C80812247DF38A002D0CB8 /* AddContactViewController.swift */,
+				31C80813247DF38A002D0CB8 /* AddContactViewController.xib */,
+				31C80822247E166A002D0CB8 /* EditViewController.swift */,
+				31C80823247E166A002D0CB8 /* EditViewController.xib */,
 			);
 			path = table3;
+			sourceTree = "<group>";
+		};
+		313752682477BDBD0071643E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				313752692477BDD00071643E /* Person.swift */,
+				31C80816247E03A1002D0CB8 /* Person1.swift */,
+				31C80818247E03CA002D0CB8 /* ManagerImagePicker.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +160,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C80825247E166A002D0CB8 /* EditViewController.xib in Resources */,
 				313752612477BD830071643E /* LaunchScreen.storyboard in Resources */,
+				3137526E2477BF410071643E /* CustommerTableViewCell.xib in Resources */,
 				3137525E2477BD830071643E /* Assets.xcassets in Resources */,
+				31C80815247DF38A002D0CB8 /* AddContactViewController.xib in Resources */,
 				3137525C2477BD810071643E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +178,13 @@
 			files = (
 				313752592477BD810071643E /* ViewController.swift in Sources */,
 				313752552477BD810071643E /* AppDelegate.swift in Sources */,
+				3137526A2477BDD00071643E /* Person.swift in Sources */,
+				31C80817247E03A1002D0CB8 /* Person1.swift in Sources */,
+				31C80814247DF38A002D0CB8 /* AddContactViewController.swift in Sources */,
+				3137526D2477BF410071643E /* CustommerTableViewCell.swift in Sources */,
 				313752572477BD810071643E /* SceneDelegate.swift in Sources */,
+				31C80819247E03CA002D0CB8 /* ManagerImagePicker.swift in Sources */,
+				31C80824247E166A002D0CB8 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BQNRTN9YS2;
 				INFOPLIST_FILE = table3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BQNRTN9YS2;
 				INFOPLIST_FILE = table3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
